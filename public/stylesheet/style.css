@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 html,body{
     height: 100%;
     width: 100%;
@@ -24,150 +24,96 @@ html,body{
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.385), -15px -15px 20px white;
     border-radius: 20px;
 }
-
+.nav img{
+    height: 12vw;
+    position: relative;
+    top: 30%;
+    left: -5%;
+    object-fit: cover;
+}
 .nav{
-    height: 8vh;
+    height: 13vh;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     padding: 0 3vw;
 }
-.nav a{
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: black; 
-    transition: all 0.5s;
-}
-.nav a:hover{
-    transform: scale(1.3);
-}
+
 .nav-part2 {
     display: flex;
-    gap: 4vw;
+    gap: 3.2vw;
+    width: 30%;
+    height: 50%;
     /* border: 2px solid black; */
 }
-
-.main .page1 h2{
-    font-size: 1.8rem;
-    height: 10%; 
-    width: 100%;
-    padding-top: 0.8vh;
-    font-weight: 600;
-}
-.skill{
-    height: 80%;
-    width: 80%;
-    /* background-color: #ECF0F3; */
-    border-radius: 20px;
-    margin-top: 3%;
-    margin-left: 5%;
-    /* box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.385), -15px -15px 20px #fff; */
-}
-.skill h3{
-    margin: 2%;
+.nav-part2 a{
+    color: black;
+    /* border: 2px solid black;  */
+    border-radius: 5px;
+    font-size: 1.15vw;
     font-weight: 500;
-    margin-left: 5%;
+    text-decoration: none;
+    transition: all 0.5s;
+
 }
-.skill li{
-    margin-top: 1%;
-}
-#jango{
-    position: relative;
-    top: -97.5%;
-    left: 60%;
-}
-.bar{
-    background: #353b48;
-    display: block;
-    height: 20px;
-    width: 40%;
-    margin-left: 5%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.385), -15px -15px 20px #fff;
-    transition: all 0.3 cubic-bezier(.25,.8,.25,1);
-}
-.bar:hover {
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.385), 15px 15px 20px rgba(0, 0, 0, 0.3);
-}
-.bar span{
-    height: 20px;
-    float: left;
-    background: #ECF0F3;
+.nav-part2 a:hover{
+    transform: scale(1.3);
 }
 
-.HTML{
+#part_one{
+    width: 20%;
+    height: 60%;
+    /* border: 2px solid black; */
+    float: right;
+}
+
+#part_two{
     width: 80%;
-    animation: HTML 3s; 
+    height: 80%;
+    /* border: 2px solid black; */
+    float: left;
 }
-.CSS{
-    width: 80%;
-    animation: CSS 3s; 
+
+#img1{
+    width: 170%;
+    position: relative;
+    top: 25%;
+    right: 75%;
+    /* border: 2px solid black; */
+    
 }
-.javascript{
-    width: 80%;
-    animation: javascript 3s; 
+
+.page1 h4{
+    font-size: 1.5rem;
+    color: grey;
+    position: relative;
+    top: 15%;
+    left: 7.5%;
 }
-.Python{
-    width: 80%;
-    animation: Python 3s; 
+.page1 h1 {
+    font-weight: 700;
+    position: relative;
+    top: 20%;
+    left: 7.5%;
+    
+    
 }
-.SQL{
-    width: 80%;
-    animation: SQL 3s; 
+.page1 h1 #clr1{
+    color: darkorange;
 }
-.Django{
-    width: 70%;
-    animation: Django 3s;
+.page1 h1 #clr2{
+    color: rgba(0, 0, 139, 0.819);
 }
-@keyframes HTML {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 80%;
-    }    
+.page1 h6{
+    font-size: 1.7vh;
+    width: 50%;
+    position: relative;
+    top: 25%;
+    left: 7.5%;
+    color: grey;
 }
-@keyframes CSS {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 80%;
-    }    
-}
-@keyframes javascript {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 75%;
-    }    
-}
-@keyframes Python {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 80%;
-    }    
-}
-@keyframes SQL {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 80%;
-    }    
-}
-@keyframes Django {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 70%;
-    } 
-}
+
+
+
+
