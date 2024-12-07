@@ -15,12 +15,13 @@ html,body{
     width: 100%;
 }
 .page1{
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
     background-color: #ECF0F3;
-    margin-top: 5%;
-    margin-left: 5%;
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.385), -15px -15px 20px #fff;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.385), -15px -15px 20px white;
     border-radius: 20px;
 }
 
@@ -36,11 +37,16 @@ html,body{
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
-    color: black;
+    color: black; 
+    transition: all 0.5s;
+}
+.nav a:hover{
+    transform: scale(1.3);
 }
 .nav-part2 {
     display: flex;
     gap: 4vw;
+    /* border: 2px solid black; */
 }
 
 .main .page1 h2{
@@ -49,7 +55,6 @@ html,body{
     width: 100%;
     padding-top: 0.8vh;
     font-weight: 600;
-    /* text-align: center; */
 }
 .skill{
     height: 80%;
@@ -67,6 +72,11 @@ html,body{
 }
 .skill li{
     margin-top: 1%;
+}
+#jango{
+    position: relative;
+    top: -97.5%;
+    left: 60%;
 }
 .bar{
     background: #353b48;
@@ -90,31 +100,35 @@ html,body{
 }
 
 .HTML{
-    width: 70%;
+    width: 80%;
     animation: HTML 3s; 
 }
 .CSS{
-    width: 70%;
+    width: 80%;
     animation: CSS 3s; 
 }
 .javascript{
-    width: 60%;
+    width: 80%;
     animation: javascript 3s; 
 }
 .Python{
-    width: 50%;
+    width: 80%;
     animation: Python 3s; 
 }
-.Java{
-    width: 60%;
-    animation: Java 3s; 
+.SQL{
+    width: 80%;
+    animation: SQL 3s; 
+}
+.Django{
+    width: 70%;
+    animation: Django 3s;
 }
 @keyframes HTML {
     0%{
         width: 0%;
     }
     100%{
-        width: 70%;
+        width: 80%;
     }    
 }
 @keyframes CSS {
@@ -122,7 +136,7 @@ html,body{
         width: 0%;
     }
     100%{
-        width: 70%;
+        width: 80%;
     }    
 }
 @keyframes javascript {
@@ -130,7 +144,7 @@ html,body{
         width: 0%;
     }
     100%{
-        width: 60%;
+        width: 75%;
     }    
 }
 @keyframes Python {
@@ -138,14 +152,22 @@ html,body{
         width: 0%;
     }
     100%{
-        width: 50%;
+        width: 80%;
     }    
 }
-@keyframes Java {
+@keyframes SQL {
     0%{
         width: 0%;
     }
     100%{
-        width: 60%;
+        width: 80%;
     }    
+}
+@keyframes Django {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    } 
 }
