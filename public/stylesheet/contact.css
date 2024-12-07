@@ -14,12 +14,13 @@ html,body{
     width: 100%;
 }
 .page1 {
-    height: 86%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
     background-color: #ECF0F3;
-    margin-top: 7%;
-    margin-left: 5%;
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.385), -15px -15px 20px #fff;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.385), -15px -15px 20px white;
     border-radius: 20px;
 }
 .nav{
@@ -28,23 +29,31 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3vw;
   }
   .nav a{
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
     color: black;
+    transition: all 0.5s;
   }
+  .nav a:hover{
+    transform: scale(1.3);
+}
   .nav-part2 {
     display: flex;
     gap: 4vw;
+    position: relative;
+    left: 5vw;
   }
-  .main .page1 h2{
+
+ .page1 h2{
     font-size: 1.8rem;
     height: 10%; 
     width: 100%;
-    font-weight: 400;
+    padding-top: 0.8vh;
+    padding-left: 2.9vw;
+    font-weight: 600;
 }
 .page1 .text {
     height: 50%;
@@ -83,6 +92,21 @@ html,body{
     border-radius: 100%;
     padding-top: 28px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.385), -15px -15px 20px #ECF0F3;
+    transition: all 0.5s;
+}
+#loc:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#call:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#mail:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 .heading{
     height: 7%;
